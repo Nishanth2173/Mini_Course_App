@@ -4,7 +4,7 @@ import api from '../api/axios'
 import Button from '../components/Button'
 import Input from '../components/Input'
 import AuthCard from '../components/AuthCard'
-import Popup from '../components/PopUp'
+import Popup from '../components/Popup'
 
 function Login() {
   const [email,setEmail]=useState('')
