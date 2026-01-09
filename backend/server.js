@@ -8,7 +8,11 @@ const subscriptionRoutes = require('./src/routes/subscription.route');
 const myCourseRoutes = require('./src/routes/myCourse.route');
 const app = express();
 
-app.use(cors());
+app.use(cors({
+  origin:
+  ['https://mini-course-app-ftuc.vercel.app'],
+  credentials: true
+}));
 app.use(express.json());
 
 
