@@ -9,9 +9,11 @@ import CourseDetail from '../pages/CourseDetails'
 import MyCourses from '../pages/MyCourses'
 import ChangePassword from '../pages/ChangePassword'
 import ProtectedRoute from './ProtectedRoutes'
+import Footer from '../components/Footer'
 
 function AppRoutes() {
     return (
+        <>
         <Routes>
             <Route>
                 <Route path='/' element={<Login />} />
@@ -39,7 +41,8 @@ function AppRoutes() {
             </Route>
             <Route path='/change-password' element={<ProtectedRoute><ChangePassword /></ProtectedRoute>} />
         </Routes>
-        
+        <Footer />
+        </>
     )
 }
 
