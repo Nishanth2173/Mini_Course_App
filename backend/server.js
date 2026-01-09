@@ -8,7 +8,16 @@ const subscriptionRoutes = require('./src/routes/subscription.route');
 const myCourseRoutes = require('./src/routes/myCourse.route');
 const app = express();
 
-app.use(cors());
+app.use(cors({
+  origin: [
+    "https://mini-course-app-gamma.vercel.app"
+  ],
+  methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+  allowedHeaders: ["Content-Type", "Authorization"],
+  credentials: true
+}));
+
+app.options("*", cors());
 app.use(express.json());
 
 
