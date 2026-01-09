@@ -9,6 +9,13 @@ Knowledge Nexus is a full-stack mini course platform where users can explore cou
 🚀 **Hosted Application:**  
 https://mini-course-app-gamma.vercel.app
 
+To login the app use these dummy logins
+### 1. test@gmail.com
+password: Test@123
+
+### 2. onepiece@gmail.com
+password: Merry@123
+
 ---
 
 ## 🛠️ Tech Stack
@@ -106,17 +113,9 @@ Start command: npm start
 Add environment variables in Render dashboard
 
 
-### Live link 
-Knowledge Nexus - https://mini-course-app-gamma.vercel.app
+### Details:
 
-To login the app use these dummy logins
-### 1. test@gmail.com
-password: Test@123
-
-### 2. onepiece@gmail.com
-password: Merry@123
-
-or you can sign in and login with dummy data, it will show the courses available. 
+you can sign in and login with dummy data, it will show the courses available. 
 For the free course it will subscribe automatically.
 But for the paid course, Until you enter the promo code the price will be become half and after subscribing it will direct you to the My courses page to see the courses that you had subscribed.
 
