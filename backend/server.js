@@ -9,10 +9,11 @@ const myCourseRoutes = require('./src/routes/myCourse.route');
 const app = express();
 
 app.use(cors({
-  origin:
-  ['https://mini-course-app-ftuc.vercel.app'],
-  credentials: true
+  origin:'*',
+  methods:['GET','POST','PUT','DELETE','OPTIONS'],
+  allowedHeaders:['Content-Type','Authorization']
 }));
+app.options('*', cors());
 app.use(express.json());
 
 
@@ -26,7 +27,9 @@ app.use("/my-courses", myCourseRoutes);
 //     res.send('Api is running');
 // });
 
-app.listen(process.env.PORT, () => {
-  console.log(`Server is running on port ${process.env.PORT}`);
+// app.listen(process.env.PORT, () => {
+//   console.log(`Server is running on port ${process.env.PORT}`);
 
-})
+// });
+
+module.exports = app;
