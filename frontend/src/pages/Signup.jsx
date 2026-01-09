@@ -4,7 +4,7 @@ import api from '../api/axios'
 import Button from '../components/Button'
 import Input from '../components/Input'
 import AuthCard from '../components/AuthCard'
-import { passwordOk } from '../utils/PasswordStrength'
+import { passwordOk } from '../utils/passwordStrength'
 
 
 function Signup() {
