@@ -29,7 +29,7 @@ password: Merry@123
 ### Backend
 - Node.js
 - Express.js
-- MongoDB
+- PostgreSQL(Neon-cloud platform)
 - JWT Authentication
 
 ### Deployment
