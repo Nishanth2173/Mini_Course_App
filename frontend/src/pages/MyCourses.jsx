@@ -17,7 +17,6 @@ function MyCourses() {
       <Navbar />
 
       <div className="min-h-screen bg-gray-50 px-6 py-8">
-
         <h1 className="text-3xl font-bold mb-6">
           My Courses
         </h1>
@@ -35,7 +34,6 @@ function MyCourses() {
                 key={c.id}
                 className="bg-white rounded-xl shadow overflow-hidden"
               >
-
                 <div className="p-4 space-y-2">
                   <h2 className="text-lg font-semibold">
                     {c.title}
@@ -50,14 +48,15 @@ function MyCourses() {
 
                   <p className="text-sm text-gray-500">
                     Subscribed on:{' '}
-                    {new Date(c.created_at).toLocaleDateString()}
+                    {c.subscribed_at
+                      ? new Date(c.subscribed_at).toLocaleDateString()
+                      : 'N/A'}
                   </p>
                 </div>
               </div>
             ))}
           </div>
         )}
-
       </div>
     </>
   )
